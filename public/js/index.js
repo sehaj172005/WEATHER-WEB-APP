@@ -75,7 +75,7 @@ const getInfo = async(event) => {
         cityName.innerText = 'Please write the city name before you Search';
         weatherInfo.innerHTML = ""; // Clear weather info
     } else {
-        let url = `http://api.weatherapi.com/v1/current.json?key=c72bee3c58c64b21b2390638232408&q=${InputcityVal}&aqi=no`;
+        let url = `//api.weatherapi.com/v1/current.json?key=c72bee3c58c64b21b2390638232408&q=${InputcityVal}&aqi=no`;
         try {
             const response = await fetch(url);
 
