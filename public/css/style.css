@@ -1,0 +1,423 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quattrocento', serif;}
+
+    /* STYLING INDEX PAGE */
+
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        background: rgb(8, 8, 109);
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 3rem;
+      }
+      nav .mainMenu {
+        display: flex;
+        list-style: none;
+        margin-right: 50px;
+      }
+      nav .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        transition: 0.2s ease;
+        
+      }
+      nav .mainMenu li a:hover {
+        background: rgb(216, 165, 135);
+      }
+      nav .openMenu {
+        font-size: 2rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+      }
+      nav .mainMenu .closeMenu,
+      .icons i {
+        font-size: 2rem;
+        display: none;
+        cursor: pointer;
+      }
+      
+      
+      nav .logo {
+        margin: 6px;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin-left: 50px;
+        display: inline;
+    
+      }
+
+      /* MEDIA QUERY HAMBURGER NAVBAR */
+      @media (max-width: 800px) {
+        nav .mainMenu {
+          height: 100vh;
+          position: fixed;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          z-index: 10;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: rgb(0, 0, 0);
+          transition: top 1s ease 0s;
+          display: none;
+        }
+        nav .mainMenu .closeMenu {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+        nav .openMenu {
+          display: block;
+        }
+        nav .mainMenu li a:hover {
+          background: none;
+          color: rgb(255, 123, 0);
+        }
+        .icons i {
+          display: inline-block;
+          padding: 12px;
+        }}
+.hometext{
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+}
+
+#homeimage img{
+  width: 40%;
+  float: right;
+  margin-right: 90px;
+}
+
+.hometext{
+  margin-top: 40px;
+}
+
+.homemidsec{
+  display: flex;
+  flex-direction: row;
+}
+
+
+#weather{
+    color:#00004b
+}
+
+#btn{
+    margin-top:  20px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: black;
+    color:white;
+}
+
+button#btn:hover{
+    box-shadow: inset 8px -6px #1010ea ;
+    color:white;
+}
+
+@media (max-width:900px){
+  .homemmidsec{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hometext{
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0%;
+    padding-top: 5%;
+  }
+
+  #homeimage img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+    padding-top: 10%;
+  }
+}
+
+/* MEDIA QUERIES HOME PAGE */
+
+
+@media (max-width:900px){
+  .homemmidsec{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hometext{
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0%;
+    padding-top: 5%;
+  }
+
+  #homeimage img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+    padding-top: 10%;
+  }
+}
+
+footer{
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    width: 100%;
+    line-height: 2rem;
+    background-color: #00004b;
+  }
+
+footer p{
+    display: flex;
+    margin: 0px auto;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.4rem;
+}
+
+
+/* STYLIMG ABOUT PAGE */
+
+
+.aboutmidsection{
+  display: flex;
+  flex-direction: row;
+}
+
+#heading{
+  color: #00004b;
+  font-weight: bold;
+}
+
+.abouttext{
+  margin-top: 100px;
+}
+
+/* MEDIA QUERIES ABOUT PAGE */
+
+
+@media (max-width:800px){
+  .aboutmidsection{
+    display: flex;
+    flex-direction:column;
+  }
+
+  figure img{
+    margin-top: 2%;
+    width: 60%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+  }
+
+  .abouttext{
+    text-align: center;
+    padding-bottom: 10%;
+    
+  }
+}
+#homeimage img{
+  width: 40%;
+  float: right;
+  margin-right: 90px;
+}
+
+.hometext{
+  margin-top: 40px;
+}
+
+.homemidsec{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width:900px){
+  .homemmidsec{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hometext{
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0%;
+    padding-top: 5%;
+  }
+
+  #homeimage img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+    padding-top: 10%;
+  }
+}
+
+/* ERROR PAGE STYLING */
+
+
+.fig{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 70%;
+  margin-top: 3%;
+}
+
+.errormidsection{
+  display: flex;
+  justify-content: center;
+  /* display: block; */
+}
+
+.errortext{
+  text-align: center;
+  margin-top: 10%;
+  margin-right: 13%;
+}
+
+.errorbtn{
+  background-color: #00004b;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+/* MEDIA QUERY ERROR PAGE */
+
+
+@media (max-width:750px){
+  .fig{
+    margin-top: 15%;
+  }
+}
+
+
+/* WEATHER PAGE STYLING */
+
+
+
+
+.temp_info{
+  background-color: #00003b;
+  width:30%;
+  margin: auto;
+  min-height: 14rem;
+  border-radius: 40px;
+  
+  
+}
+.top_layer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(35, 33, 69);
+  color: white;
+  width:100%;
+  border-radius: 20px;
+  padding: 1rem;
+  padding-bottom: 0;
+  margin-top: 15%;
+}
+
+.temp_form{
+  background-color: black;
+  padding: 0.5rem;
+  width: 45%;
+  border-radius: 40px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  
+
+}
+
+.temp_form input[type = "text"]{
+  width: 100%;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+#searchbtn{
+  border-radius: 20px;
+  width: 30%;
+  background-color: rgb(26, 26, 56);
+  color: white;
+  padding: 0.3rem;
+  margin: 0;
+}
+
+#searchbtn:hover{
+  background-color: white;
+  color: black;
+}
+
+.middle_layer{
+  color:white;
+  display: flex;
+  flex-direction: row;
+  font-size: larger;
+}
+
+.main_layer{
+  margin-top: 10px;
+  font-size: x-large;
+  text-align: center;
+  color: white;
+
+
+}
+
+/* MEDIA QUERY WEATHER PAGE */
+
+
+@media(max-width:700px){
+  .temp_form{
+    width:90%;
+  }
+
+  .temp_info{
+    width:60%;
+  }
+}
